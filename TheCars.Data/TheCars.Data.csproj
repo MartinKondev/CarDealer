@@ -49,41 +49,31 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CarsContext.cs" />
+    <Compile Include="Entities\Bicycle.cs" />
     <Compile Include="Entities\Car.cs" />
+    <Compile Include="Entities\Caravan.cs" />
     <Compile Include="Entities\FuelType.cs" />
     <Compile Include="Entities\Location.cs" />
+    <Compile Include="Entities\Make.cs" />
+    <Compile Include="Entities\Model.cs" />
+    <Compile Include="Entities\Motorcycle.cs" />
     <Compile Include="Entities\Vehicle.cs" />
     <Compile Include="Entities\VehicleExtra.cs" />
-    <Compile Include="Migrations\201712301042015_Initial.cs" />
-    <Compile Include="Migrations\201712301042015_Initial.Designer.cs">
-      <DependentUpon>201712301042015_Initial.cs</DependentUpon>
+    <Compile Include="Migrations\201712310836335_one.cs" />
+    <Compile Include="Migrations\201712310836335_one.Designer.cs">
+      <DependentUpon>201712310836335_one.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201712301141126_BasicCarsDbStructure.cs" />
-    <Compile Include="Migrations\201712301141126_BasicCarsDbStructure.Designer.cs">
-      <DependentUpon>201712301141126_BasicCarsDbStructure.cs</DependentUpon>
+    <Compile Include="Migrations\201712310848334_cyclessAdd.cs" />
+    <Compile Include="Migrations\201712310848334_cyclessAdd.Designer.cs">
+      <DependentUpon>201712310848334_cyclessAdd.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201712301342083_ChangeCarModel.cs" />
-    <Compile Include="Migrations\201712301342083_ChangeCarModel.Designer.cs">
-      <DependentUpon>201712301342083_ChangeCarModel.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201712301343218_removeenginetable.cs" />
-    <Compile Include="Migrations\201712301343218_removeenginetable.Designer.cs">
-      <DependentUpon>201712301343218_removeenginetable.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201712301912579_addManyToMany.cs" />
-    <Compile Include="Migrations\201712301912579_addManyToMany.Designer.cs">
-      <DependentUpon>201712301912579_addManyToMany.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201712301931085_fix.cs" />
-    <Compile Include="Migrations\201712301931085_fix.Designer.cs">
-      <DependentUpon>201712301931085_fix.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201712301934412_check.cs" />
-    <Compile Include="Migrations\201712301934412_check.Designer.cs">
-      <DependentUpon>201712301934412_check.cs</DependentUpon>
+    <Compile Include="Migrations\201712311823230_biiiigChangees.cs" />
+    <Compile Include="Migrations\201712311823230_biiiigChangees.Designer.cs">
+      <DependentUpon>201712311823230_biiiigChangees.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\CarRepository.cs" />
     <Compile Include="Repositories\GenericRepository.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -93,26 +83,14 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201712301042015_Initial.resx">
-      <DependentUpon>201712301042015_Initial.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201712310836335_one.resx">
+      <DependentUpon>201712310836335_one.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201712301141126_BasicCarsDbStructure.resx">
-      <DependentUpon>201712301141126_BasicCarsDbStructure.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201712310848334_cyclessAdd.resx">
+      <DependentUpon>201712310848334_cyclessAdd.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201712301342083_ChangeCarModel.resx">
-      <DependentUpon>201712301342083_ChangeCarModel.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201712301343218_removeenginetable.resx">
-      <DependentUpon>201712301343218_removeenginetable.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201712301912579_addManyToMany.resx">
-      <DependentUpon>201712301912579_addManyToMany.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201712301931085_fix.resx">
-      <DependentUpon>201712301931085_fix.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201712301934412_check.resx">
-      <DependentUpon>201712301934412_check.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201712311823230_biiiigChangees.resx">
+      <DependentUpon>201712311823230_biiiigChangees.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

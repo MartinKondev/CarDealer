@@ -7,13 +7,13 @@ namespace TheCars.Data.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class addManyToMany : IMigrationMetadata
+    public sealed partial class biiiigChangees : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(addManyToMany));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(biiiigChangees));
         
         string IMigrationMetadata.Id
         {
-            get { return "201712301912579_addManyToMany"; }
+            get { return "201712311823230_biiiigChangees"; }
         }
         
         string IMigrationMetadata.Source

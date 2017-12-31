@@ -1,14 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace TheCars.Data.Entities
 {
     public class Car : Vehicle
     {
+        [Range(1, 100)]
         public int SeatsCount { get; set; }
 
         [Required]
@@ -18,7 +16,8 @@ namespace TheCars.Data.Entities
         public FuelType FuelType { get; set; }
 
         [Required]
-        public double Size { get; set; }
+        [Range(0.1, 100)]
+        public double EngineSize { get; set; }
 
         [Required]
         public bool Is4x4 { get; set; }

@@ -7,13 +7,13 @@ namespace TheCars.Data.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class BasicCarsDbStructure : IMigrationMetadata
+    public sealed partial class cyclessAdd : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(BasicCarsDbStructure));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(cyclessAdd));
         
         string IMigrationMetadata.Id
         {
-            get { return "201712301141126_BasicCarsDbStructure"; }
+            get { return "201712310848334_cyclessAdd"; }
         }
         
         string IMigrationMetadata.Source

@@ -13,6 +13,7 @@ namespace TheCars.Data.Entities
         public int Id { get; set; }
 
         [Required]
+        [StringLength(50, ErrorMessage = "Location name cannot be longer than 50 characters.")]
         public string Name { get; set; }
     }
 }

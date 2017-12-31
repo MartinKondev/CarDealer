@@ -13,10 +13,10 @@ namespace TheCars.Data.Entities
         public Guid Id { get; set; }
 
         [Required]
-        public string Make { get; set; }
+        public Make Make { get; set; }
 
         [Required]
-        public string Model { get; set; }
+        public Model Model { get; set; }
 
         [Required]
         [Range(1, Double.MaxValue)]
